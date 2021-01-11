@@ -9,6 +9,7 @@ body{
   margin-top: 0 !important;
   /* font-family: 'Gurajada', serif !important; */
   background-color: #F8F9FA;
+    color: #555555;
 }
 
 main{
@@ -26,6 +27,10 @@ p{
 .card-text{
 font-size: 1em !important;
 /* font-family: sans-serif; */
+}
+a{
+  text-decoration: none;
+  color: #555555;
 }
 
 .card a{
