@@ -15,12 +15,15 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Gurajada&family=Merriweather:wght@300;400;700&family=Prata&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/sidenav.css">
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/members.css">
 
@@ -28,10 +31,10 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body class="px-3">
+<body class="">
 
   <!--Navigation Bar Section-->
-  <nav class="navbar navbar-expand-lg navbar-light text-dark  bg-light rounded">
+  <!-- <nav class="navbar navbar-expand-lg navbar-light text-dark  bg-light rounded">
     <div class="container">
       <a class="text-light text-center my-3 mobile-gone navbar-brand" href="index.html">Stress, Trauma & > Resilience Centre</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,12 +63,37 @@
         </ul>
       </div>
     </div>
+  </nav> -->
+
+  <nav class="nav">
+    <ul class="bg-light text-dark">
+
+      <li class="full" style="float:center"><a class="nav-link" aria-current="page" href="index.html">Home</a></li>
+      <li class="full" style="float:center"><a class="nav-link" href="members.html">Members</a></li>
+      <li class="full" style="float:center"><a class="nav-link disabled" href="#">Current Projects</a></li>
+      <li class="full" style="float:center"><a class="nav-link disabled" href="#">Activities & Events</a></li>
+      <li class="full" style="float:center"><a class="nav-link disabled" href="#">News and Media</a></li>
+      <li class="full" style="float:center"><a class="nav-link disabled" href="#">Blogs</a></li>
+      <li class="dropdown bars full">
+        <a class="dropbtn" onclick="openNav()"><i class="fa fa-bars"></i></a>
+      </li>
+
+    </ul>
   </nav>
 
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color:#818181;">&times;</a>
+      <a class="nav-link" aria-current="page" href="index.html">Home</a>
+      <a class="nav-link" href="members.html">Members</a>
+      <a class="nav-link disabled" href="#">Current Projects</a>
+      <a class="nav-link disabled" href="#">Activities & Events</a>
+      <a class="nav-link disabled" href="#">News and Media</a>
+      <a class="nav-link disabled" href="#">Blogs</a>
+    </div>
 
 
   <!-- Add your site or application content here -->
-  <main class="container pt-2 pt-lg-5 p-5">
+  <main class="container pt-2 pt-lg-5  p-5">
     <h1 class="mb-md-0 mb-4 ms-lg-5 ps-lg-5">Members</h1>
     <div class="row mb-5 mt-0 p-lg-5 pt-0">
       <div class="col col-12 col-lg-6 pt-md-1 p-md-5">
@@ -103,7 +131,7 @@
 
 
         <div class="row my-5 py-1 " id="item-1">
-          <div class="col-lg-4  col-12 my-3">
+          <div class="col-lg-4 col-md-6 col-12 my-3">
             <a href="#" data-bs-toggle="modal" data-bs-target="#kim" class="">
               <div class="card">
                 <img src="img/pic1.jpg" class="card-img-top" alt="...">
@@ -115,7 +143,7 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-4 col-12 my-3">
+          <div class="col-lg-4 col-md-6 col-12 my-3">
             <a href="#" data-bs-toggle="modal" data-bs-target="#alfi" class="">
               <div class="card">
                 <img src="img/pic3.jpg" class="card-img-top" alt="...">
@@ -128,7 +156,7 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-4 col-12 my-3">
+          <div class="col-lg-4 col-md-6 col-12 my-3">
             <a href="#" data-bs-toggle="modal" data-bs-target="#robyn">
               <div class="card">
                 <img src="img/robyn3.jpg" class="card-img-top" alt="...">
@@ -140,7 +168,7 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-4 col-12 my-3">
+          <div class="col-lg-4 col-md-6 col-12 my-3">
             <a href="#" data-bs-toggle="modal" data-bs-target="#hymie" class="">
               <div class="card">
                 <img src="img/hymie.jpg" class="card-img-top" alt="...">
@@ -152,7 +180,7 @@
             </a>
           </div>
 
-          <div class="col-lg-4 col-12 my-3">
+          <div class="col-lg-4 col-md-6 col-12 my-3">
             <a href="#" data-bs-toggle="modal" data-bs-target="#paul" class="y">
               <div class="card">
                 <img src="img/paul2.png" class="card-img-top" alt="...">
@@ -166,8 +194,8 @@
           </div>
 
 
-          <div class="col-lg-4 col-12 my-3">
-            <a href="#" data-bs-toggle="modal" data-bs-target="#paul" class="y">
+          <div class="col-lg-4 col-md-6 col-12 my-3">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#sarah" class="y">
               <div class="card">
                 <img src="img/sarah.jpg" class="card-img-top" alt="Sarah Everts">
                 <div class="card-body text-center p-5">
@@ -392,11 +420,11 @@ Mental Health, Substance Use and Coping during the COVID-19 pandemic among Canad
 
 
   <!-- Modal -->
-  <div class="modal fade" id="paul" tabindex="-1" aria-labelledby="Dr. Villeneuve's Publications" aria-hidden="true">
+  <div class="modal fade" id="sarah" tabindex="-1" aria-labelledby="Sarah Everts's Publications" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="Dr. Villeneuve's Publications">Dr. Paul Villeneuve</h5>
+          <h5 class="modal-title" id="Sarah Everts's Publications">Sarah Everts</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body p-5">
@@ -411,20 +439,7 @@ She has a Master of Journalism from Carleton, a Master of Science in Chemistry f
           <br>
           <h6>Publications</h6>
           <br>
-          <p>
-            Crouse DL, Pinault L, Christidis T, Lavigne E, Thomson EM, <b>Villeneuve PJ</b>. Residential greenness and indicators of stress and mental well-being in a Canadian national-level survey.
-            Environ Research 2020 Oct 4;192:110267. doi: 10.1016/j.envres.2020.110267.</p>
-          <br>
-          <p>
-            Chen H, Kwong J, Copes R, Burnett RT, <b>Villeneuve PJ</b>, et al. Living near major roads and the incidence of dementia, Parkinson's disease,
-            and multiple sclerosis: a population-based cohort study. <i>Lancet</i>. 2017 Feb 18;389(10070):718-726
-          </p>
-          <br>
-          <p>
-            Ross NA, Oliver L, <b>Villeneuve PJ</b>. The Contribution of Neighbourhood Material and Social Deprivation to Survival: A 22-Year Follow-Up of More than 500,000 Canadians.
-            <i>Int J Environ Research Public Health </i>2013:10: 1378-1391.
-          </p>
-          <br>
+
 
         </div>
         <div class="modal-footer">
